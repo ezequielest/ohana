@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-container {
+  padding-top: 40px;
   max-width: 1100px;
   position: relative;
   margin: 0 auto;
@@ -584,10 +585,15 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #66d3bf;
+  color: #fff;
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.gtco-social-icons li a i:hover {
+  color: #66d3bf;
+}
+
 .gtco-social-icons li a i {
   font-size: 20px;
 }
@@ -968,7 +974,7 @@ form label {
   -webkit-transform: skewY(-12deg);
   -moz-transform: skewY(-12deg);
   transform: skewY(-12deg);
-  backgroun: #f6f9fc;
+  background: #f6f9fc;
 }
 
 #gtco-features-2 {
@@ -1148,7 +1154,7 @@ form label {
 }
 
 #gtco-footer {
-  padding: 10em 10em 2em 10em;
+  padding: 5em 10em 2em 10em;
   background: #353535;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1800,7 +1806,9 @@ form label {
 }
 
 .owl-theme .owl-controls .owl-nav [class*="owl-"] {
-  background: none !important;
+  /*background: none !important;*/
+  background: #66d3bf !important;
+  border-radius: 0px;
 }
 .owl-theme .owl-controls .owl-nav [class*="owl-"] i {
   font-size: 24px;
@@ -2177,4 +2185,16 @@ header{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+#owl img{
+  display: block;
+  /*width: 100vw;*/
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.owl-prev, .owl-next{
+  background: #46b8da;
 }
