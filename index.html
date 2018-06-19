@@ -133,6 +133,18 @@
 		</div>
 	</header>
 
+	<secction id="slide">
+		<div class="owl-carousel owl-theme">
+			<div> Your Content </div>
+			<div> Your Content </div>
+			<div> Your Content </div>
+			<div> Your Content </div>
+			<div> Your Content </div>
+			<div> Your Content </div>
+			<div> Your Content </div>
+		</div>
+	</secction>
+
 	<!--<div id="gtco-subscribe">
 		<div class="gtco-container">
 			<div class="row animate-box">
@@ -252,6 +264,27 @@
 	
 	<!-- Main -->
 	<script src="js/main.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('.owl-carousel').owlCarousel({
+				loop:true,
+				margin:10,
+				nav:true,
+				responsive:{
+					0:{
+						items:1
+					},
+					600:{
+						items:3
+					},
+					1000:{
+						items:5
+					}
+				}
+			});
+		});
+	</script>
 
 	</body>
 </html>
